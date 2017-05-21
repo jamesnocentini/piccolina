@@ -1,0 +1,74 @@
+/* remove spacing between middle columns */
+.row.no-gutter [class*='col-']:not(:first-child):not(:last-child) {
+  padding-right:2px;
+  padding-left:2px;
+}
+/* remove right padding from first column */
+.row.no-gutter [class*='col-']:first-child {
+  padding-right:2px;
+}
+/* remove left padding from last column */
+.row.no-gutter [class*='col-']:last-child {
+  padding-left:2px;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  margin: 0;
+  overflow-x: hidden;
+  margin-bottom: 140px;
+  /*overflow-y: hidden;*/
+}
+
+header {
+  width: 100%;
+  margin-top: 20px;
+}
+
+header img {
+  height: 100px;
+  margin: 0 auto;
+  width: 100px;
+  display: block;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.size-1of2 {
+  width: 49%;
+  display: inline-block;
+}
+
+footer {
+  height: 140px;
+  position: absolute;
+  right: 0px;
+  left: 0;
+  bottom: 0;
+}
+
+footer div.social {
+  background-color: black;
+  margin: 0 auto;
+  width: 100%;
+}
+footer div.social div {
+  width: 125px;
+  margin: 0 auto;
+}
+
+footer img {
+  display: inline-block;
+  width: 60px;
+}
+
+hr {
+  border-width: 0;
+  border-bottom: 1px solid rgba(204, 204, 204, 0.43);
+}
